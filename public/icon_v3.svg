@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background -->
+  <circle cx="50" cy="50" r="50" fill="#2c3e50"/>
+  <!-- Cow Face -->
+  <path fill="#ffffff" d="M25,45 Q25,25 50,25 Q75,25 75,45 Q80,45 85,50 Q88,55 80,70 L75,80 Q62,88 50,88 Q37,88 25,80 L20,70 Q12,55 15,50 Q20,45 25,45 Z" />
+  <!-- Horns -->
+  <path d="M25,45 C12,38 6,25 12,18 C18,25 25,32 32,36" stroke="#e67e22" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M75,45 C88,38 94,25 88,18 C82,25 75,32 68,36" stroke="#e67e22" stroke-width="5" stroke-linecap="round" fill="none"/>
+</svg>

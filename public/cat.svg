@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#f4ecf7"/>
+  <circle cx="100" cy="100" r="70" fill="#95a5a6"/> <!-- Grey Cat -->
+  <polygon points="40,50 70,90 30,100" fill="#95a5a6"/> <!-- Ear L -->
+  <polygon points="160,50 130,90 170,100" fill="#95a5a6"/> <!-- Ear R -->
+  <circle cx="80" cy="100" r="8" fill="#f1c40f"/> <!-- Eye L -->
+  <circle cx="120" cy="100" r="8" fill="#f1c40f"/> <!-- Eye R -->
+  <polygon points="90,120 110,120 100,135" fill="#e74c3c"/> <!-- Nose -->
+  <path d="M60,130 L30,120 M60,135 L30,135 M60,140 L30,150" stroke="#2c3e50" stroke-width="2"/> <!-- Whiskers L -->
+  <path d="M140,130 L170,120 M140,135 L170,135 M140,140 L170,150" stroke="#2c3e50" stroke-width="2"/> <!-- Whiskers R -->
+</svg>

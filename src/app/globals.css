@@ -1,0 +1,337 @@
+/* globals.css - A-Z Animals Replication */
+
+:root {
+    /* Premium Nature Palette */
+    --az-green: #2e7d32;
+    /* Deep Forest Green (Primary) */
+    --az-light-green: #e8f5e9;
+    /* Very Light Mint (Backgrounds) */
+    --az-orange: #d84315;
+    /* Terracotta (Accents) */
+    --az-cream: #fdfbf7;
+    /* Soft Warm Paper/Cream (Body Bg) */
+    --az-sky: #e1f5fe;
+    /* Soft Sky Blue (Sections) */
+    --az-dark: #2c3e50;
+    /* Dark Blue-Grey (Text) */
+    --az-white: #ffffff;
+    --az-border: #e0e0e0;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: var(--az-cream);
+    /* Changed from vanilla white/gray */
+    color: var(--az-dark);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s;
+}
+
+/* Header Styles */
+.top-header {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px;
+    color: #666;
+    padding: 8px 0;
+}
+
+.main-header {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    color: #444;
+}
+
+.nav-links a:hover {
+    color: var(--az-dark-green);
+    border-bottom: 2px solid var(--az-orange);
+}
+
+/* Hero Search Style */
+@keyframes heroZoom {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.az-hero {
+    /* New Light/Clean Theme with Animation */
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background Image Element (simulated via pseudo-element for smoother animation) */
+.az-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('/hero_animals_split.png') no-repeat center center;
+    background-size: cover;
+    animation: heroZoom 20s infinite alternate linear;
+    z-index: 0;
+}
+
+/* Overlay to ensure text pops but keep image bright */
+.az-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    /* Slightly darker for white text readability */
+    z-index: 1;
+}
+
+.az-search-container {
+    background: transparent;
+    /* Removed box */
+    padding: 0;
+    border-radius: 0;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    border: none;
+    backdrop-filter: none;
+    box-shadow: none;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.az-search-title {
+    color: white;
+    /* White text directly on image */
+    font-size: 3.5rem;
+    /* Larger */
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    /* Strong shadow */
+}
+
+/* Hiding the search form as requested ("button remove kar do search animal wala bhi") */
+.az-search-form {
+    display: none;
+}
+
+.az-search-input {
+    flex: 1;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background: white;
+    color: #333;
+}
+
+.az-search-btn {
+    background: var(--az-orange);
+    color: white;
+    border: none;
+    padding: 0 3rem;
+    font-weight: 800;
+    font-size: 1.2rem;
+    border-radius: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.az-search-btn:hover {
+    background: var(--secondary-hover);
+    transform: translateY(-1px);
+}
+
+/* Main Content Grid */
+.content-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.grid-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--az-dark-green);
+    display: inline-block;
+}
+
+.az-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.az-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.az-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.az-card-img {
+    height: 180px;
+    position: relative;
+    background: #eee;
+}
+
+.az-card-content {
+    padding: 1.2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.az-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.az-card-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.az-read-more {
+    margin-top: auto;
+    color: var(--az-dark-green);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* Footer Styles - Dark & Detailed */
+.az-footer {
+    background-color: #222222;
+    color: #bbbbbb;
+    padding: 4rem 0 2rem 0;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+}
+
+.footer-col h4 {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--az-dark-green);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-col a:hover {
+    color: var(--az-orange);
+    padding-left: 5px;
+    transition: all 0.2s;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 3rem auto 0;
+    padding: 2rem 1rem 0;
+    border-top: 1px solid #444;
+    text-align: center;
+    color: #888;
+}
+
+/* AdSense Placeholder */
+.ad-banner {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 728px;
+    height: 90px;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

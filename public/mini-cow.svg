@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#e8f6f3"/>
+  <circle cx="100" cy="100" r="80" fill="#d35400"/> <!-- Shaggy Coat Color -->
+  <path d="M60,80 Q40,60 30,40" stroke="#f0b27a" stroke-width="10" fill="none"/> <!-- Horn L -->
+  <path d="M140,80 Q160,60 170,40" stroke="#f0b27a" stroke-width="10" fill="none"/> <!-- Horn R -->
+  <rect x="70" y="80" width="60" height="60" rx="20" fill="#e67e22"/> <!-- Face -->
+  <path d="M70,80 Q100,60 130,80 L130,120 Q100,140 70,120 Z" fill="#d35400"/> <!-- Hair Tuft -->
+  <circle cx="85" cy="110" r="5" fill="#2c3e50"/> <!-- Eye L -->
+  <circle cx="115" cy="110" r="5" fill="#2c3e50"/> <!-- Eye R -->
+  <ellipse cx="100" cy="130" rx="15" ry="10" fill="#f0b27a"/> <!-- Snout -->
+</svg>

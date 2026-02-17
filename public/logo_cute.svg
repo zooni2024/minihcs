@@ -1,0 +1,23 @@
+<svg width="250" height="80" viewBox="0 0 250 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cute Mini Highland Cow Icon -->
+  <g transform="translate(10, 10) scale(0.6)">
+    <!-- Fluffy Hair -->
+    <path d="M50 10 C30 10 15 25 15 40 H85 C85 25 70 10 50 10 Z" fill="#d35400" />
+    <!-- Face Shape -->
+    <rect x="25" y="40" width="50" height="40" rx="15" fill="#e67e22" />
+    <!-- Horns -->
+    <path d="M15 40 Q 5 20 25 30" stroke="#ecf0f1" stroke-width="6" fill="none" />
+    <path d="M85 40 Q 95 20 75 30" stroke="#ecf0f1" stroke-width="6" fill="none" />
+    <!-- Eyes -->
+    <circle cx="40" cy="55" r="4" fill="#2c3e50" />
+    <circle cx="60" cy="55" r="4" fill="#2c3e50" />
+    <!-- Snout -->
+    <ellipse cx="50" cy="70" rx="12" ry="8" fill="#f6cec5" />
+    <circle cx="46" cy="70" r="2" fill="#d35400" opacity="0.5" />
+    <circle cx="54" cy="70" r="2" fill="#d35400" opacity="0.5" />
+  </g>
+
+  <!-- Text -->
+  <text x="80" y="45" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="34" fill="#2e7d32">MINI HCS</text>
+  <text x="82" y="68" font-family="'Segoe UI', sans-serif" font-weight="600" font-size="14" fill="#ff9800" letter-spacing="3">DISCOVER NATURE</text>
+</svg>

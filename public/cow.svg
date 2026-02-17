@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#eafaf1"/>
+  <circle cx="100" cy="100" r="75" fill="#ffffff" stroke="#2c3e50" stroke-width="5"/> <!-- White Head -->
+  <path d="M50,70 Q70,90 80,110" fill="#2c3e50"/> <!-- Spot L -->
+  <path d="M150,60 Q130,80 120,100" fill="#2c3e50"/> <!-- Spot R -->
+  <ellipse cx="100" cy="130" rx="30" ry="20" fill="#pink"/> <!-- Snout -->
+  <circle cx="90" cy="130" r="5" fill="#2c3e50"/> <!-- Nostril L -->
+  <circle cx="110" cy="130" r="5" fill="#2c3e50"/> <!-- Nostril R -->
+  <path d="M40,60 Q30,40 20,50" fill="#2c3e50"/> <!-- Ear L -->
+  <path d="M160,60 Q170,40 180,50" fill="#2c3e50"/> <!-- Ear R -->
+</svg>

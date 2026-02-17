@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <defs>
+    <style>
+      .cls-1 { fill: #2c3e50; }
+      .cls-2 { fill: #e67e22; }
+      .cls-text { font-family: 'Inter', sans-serif; font-weight: bold; font-size: 48px; fill: #2c3e50; }
+      .cls-sub { font-family: 'Inter', sans-serif; font-size: 14px; fill: #7f8c8d; letter-spacing: 2px; }
+    </style>
+  </defs>
+  
+  <!-- Group of Animals Silhouettes -->
+  <g transform="translate(10, 15) scale(0.8)">
+    <!-- Cow Head (Center/Back) -->
+    <path class="cls-1" d="M70,10 C55,10 45,25 40,35 C35,25 25,10 10,10 C5,10 0,15 0,25 C0,45 20,70 40,85 C60,70 80,45 80,25 C80,15 75,10 70,10 Z M40,75 C30,65 20,45 20,30 C20,30 25,20 30,20 C35,20 38,25 40,30 C42,25 45,20 50,20 C55,20 60,30 60,30 C60,45 50,65 40,75 Z" />
+    
+    <!-- Cat (Right) -->
+    <path class="cls-2" d="M100,50 C95,50 92,45 92,40 L94,30 L98,35 L102,35 L106,30 L108,40 C108,45 105,50 100,50 Z M100,50 L100,85 L85,85 L85,60 C85,60 90,55 95,55 C100,55 100,60 100,60" />
+    <circle class="cls-2" cx="100" cy="42" r="8" />
+
+    <!-- Bird (Left Top) -->
+    <path class="cls-2" d="M10,20 Q15,10 25,15 Q30,5 20,0 Q5,0 0,15 Q0,25 10,20 Z" />
+  </g>
+
+  <!-- Text -->
+  <text x="120" y="60" class="cls-text">MiniHCS</text>
+  <text x="122" y="85" class="cls-sub">ANIMAL DISCOVERY</text>
+</svg>
